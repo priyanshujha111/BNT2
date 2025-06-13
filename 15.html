@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Storage Example</title>
+</head>
+<body>
+  <h2>Store Preferences</h2>
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name" />
+  <br><br>
+  <label for="color">Favorite color:</label>
+  <input type="text" id="color" />
+  <br><br>
+  <button onclick="storeData()">Store Data</button>
+
+  <script>
+    function storeData() {
+      const name = document.getElementById("name").value;
+      const color = document.getElementById("color").value;
+
+      
+      localStorage.setItem("username", name);
+
+      
+      sessionStorage.setItem("favColor", color);
+
+      
+      console.log("Local Storage - Name:", localStorage.getItem("username"));
+      console.log("Session Storage - Favorite Color:", sessionStorage.getItem("favColor"));
+    }
+  </script>
+</body>
+</html>
