@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Task 2</title>
+</head>
+<body>
+  <script>
+    // 1. typeof for datatypes
+    let greeting = "Welcome";
+    let age = 30;
+    console.log(typeof greeting); 
+    console.log(typeof age); 
+
+    // 2. Merge (+) string & number
+    let message = "Score: " + 85;
+    console.log(message); 
+
+    // 3. charAt -
+    console.log("OpenAI Chat".charAt(6)); 
+
+    // 4. lastIndexOf
+    console.log("banana split".lastIndexOf("a")); 
+
+    // 5. Typecasting 
+    let input = "100";
+    let convertedNum = Number(input);
+    console.log(convertedNum + 50); 
+
+    // Code without typecast
+    console.log(input + 50); 
+
+    // 6. NaN example
+    let y = "xyz";
+    let nanResult = Number(y); 
+    console.log(nanResult); 
+
+    // 7. isInteger
+    console.log(Number.isInteger(5)); 
+    console.log(Number.isInteger(7.25)); 
+
+    // 8. parseInt, parseFloat
+    console.log(parseInt("456")); 
+    console.log(parseFloat("789.12"));
+
+    // 9. Print after decimal (to 2 fixed numbers)
+    let price = 199.9999;
+    console.log(price.toFixed(2)); 
+
+    // 10. switch example
+    let color = "blue";
+    switch (color) {
+      case "red":
+        console.log("Red selected");
+        break;
+      case "blue":
+        console.log("Blue selected");
+        break;
+      default:
+        console.log("Other color");
+    }
+
+    // 11. var, let, const
+    var x = 5;
+    let y1 = 15;
+    const z = 25;
+    console.log(x, y1, z); 
+
+    // Global example
+    var messageGlobal = "Accessible globally";
+    function printMessage() {
+      console.log(messageGlobal);
+    }
+    printMessage();
+
+    // 12. shift, unshift, push, pop
+    let numbers = [10, 20, 30];
+    numbers.push(40); 
+    numbers.pop();   
+    numbers.shift();  
+    numbers.unshift(5); 
+    console.log(numbers);
+
+    // Delete element in array
+    delete numbers[1]; 
+    console.log(numbers);
+
+    // 13. splice
+    let marks = [60, 70, 80, 90];
+    marks.splice(1, 2);
+    console.log(marks); // 
+
+    // Replace using splice
+    marks.splice(1, 1, 100); 
+    console.log(marks); 
+
+    // 14. reverse
+    let digits = [9, 8, 7];
+    console.log(digits.reverse()); 
+
+    // 15. Merge 2 arrays (concat)
+    let firstSet = [11, 22];
+    let secondSet = [33, 44];
+    let combined = firstSet.concat(secondSet);
+    console.log(combined);
+  </script>
+</body>
+</html>
